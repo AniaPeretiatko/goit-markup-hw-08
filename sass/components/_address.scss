@@ -1,0 +1,17 @@
+.address {
+  margin-top: 20px;
+  font-style: inherit;
+  color: var(--dark-bg-text);
+}
+
+.address__item {
+  margin-bottom: 9px;
+}
+
+.address__link {
+  margin-top: 9px;
+  color: var(--dark-bg-text);
+}
+.address__link--accent-color {
+  color: rgba(255, 255, 255, 0.6);
+}
