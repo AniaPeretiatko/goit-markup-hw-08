@@ -6,6 +6,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  // outline: 1px solid red;
 }
 
 body {
@@ -14,6 +15,12 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 h1,
@@ -51,9 +58,4 @@ p {
   height: 1px !important;
   width: 1px !important;
   overflow: hidden;
-}
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
 }

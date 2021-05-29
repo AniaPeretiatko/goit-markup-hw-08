@@ -5,6 +5,7 @@
 @import "./base/container";
 @import "./base/works-set";
 
+@import "./layouts/block";
 @import "./layouts/navigations";
 @import "./layouts/page-header";
 @import "./layouts/footer-section";
@@ -18,6 +19,7 @@
 @import "./components/footer-social-icons";
 @import "./components/address";
 @import "./components/contact-form";
+@import "./components/mobile-menu";
 
 @import "./layouts/portfolio-section";
 @import "./layouts/navigations";
