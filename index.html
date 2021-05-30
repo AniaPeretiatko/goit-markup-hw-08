@@ -46,7 +46,11 @@
               class="link contacts-header__link"
               href="mailto:info@devstudio.com"
             >
-              <svg class="contacts-header__icon" width="16" height="12">
+              <svg
+                class="contacts-header__icon icon-envelope"
+                width="16"
+                height="12"
+              >
                 <use href="./images/icons/symbol-defs.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
@@ -62,7 +66,11 @@
               "
               href="tel:+380961111111"
             >
-              <svg class="contacts-header__icon" width="10" height="16">
+              <svg
+                class="contacts-header__icon icon-smartphone"
+                width="10"
+                height="16"
+              >
                 <use
                   href="./images/icons/symbol-defs.svg#icon-smartphone"
                 ></use>
@@ -71,14 +79,14 @@
             >
           </li>
         </ul>
-        <button class="mobile-menu__btn">
+        <button type="button" class="mobile-menu__btn" data-menu-button>
           <svg class="menu-btn__icon" width="40" height="40">
             <use
               class="menu-btn__icon-close"
               href="./images/icons/symbol-defs.svg#icon-close"
             ></use>
             <use
-              class="menu-btn__icon-close"
+              class="menu-btn__icon-menu"
               href="./images/icons/symbol-defs.svg#icon-menu"
             ></use>
           </svg>
@@ -86,68 +94,82 @@
       </div>
     </header>
 
-    <!-- <div class="mobile-menu">
+    <div class="mobile-menu" data-menu>
       <div class="container">
-        <ul class="menu list">
-          <li class="menu__item">
-            <a class="link menu__link sublist menu__sublist" href="./index.html"
+        <ul class="mobile-menu__list list">
+          <li class="mobile-menu__item">
+            <a
+              class="link mobile-menu__link sublist mobile-menu__sublist"
+              href="./index.html"
               >Студия</a
             >
           </li>
-          <li class="menu__item">
-            <a class="link menu__link" href="./portfolio.html">Портфолио</a>
+          <li class="mobile-menu__item">
+            <a class="link mobile-menu__link" href="./portfolio.html"
+              >Портфолио</a
+            >
           </li>
-          <li class="menu__item">
-            <a class="link menu__link" href="contacts">Контакты</a>
+          <li class="mobile-menu__item">
+            <a class="link mobile-menu__link" href="contacts">Контакты</a>
           </li>
         </ul>
-        <ul class="list contacts-header">
-          <li class="contacts-header__item">
-            <a
-              class="link contacts-header__link"
-              href="mailto:info@devstudio.com"
-            >
-              <svg class="contacts-header__icon" width="16" height="12">
-                <use href="./images/icons/symbol-defs.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="contacts-header__item">
+
+        <ul class="list mobile-menu__contacts">
+          <li class="mobile-menu__contacts-item">
             <a
               class="
                 link
-                contacts-header__link
+                mobile-menu__contacts-link
                 sublink
-                contacts-header__sublink
+                mobile-menu__sublink
               "
               href="tel:+380961111111"
             >
-              <svg class="contacts-header__icon" width="10" height="16">
-                <use
-                  href="./images/icons/symbol-defs.svg#icon-smartphone"
-                ></use>
-              </svg>
               +38 096 111 11 11</a
             >
           </li>
+          <li class="mobile-menu__contacts-item">
+            <a
+              class="link mobile-menu__contacts-link"
+              href="mailto:info@devstudio.com"
+            >
+              info@devstudio.com
+            </a>
+          </li>
         </ul>
-        <ul class="list">
-          <li class="">
-            <a class="link" href="https://www.instagram.com/">Instagram</a>
+
+        <ul class="list mobile-menu__set">
+          <li class="mobile-menu__set-item">
+            <a
+              class="link mobile-menu__set-link"
+              href="https://www.instagram.com/"
+              >Instagram</a
+            >
           </li>
-          <li>
-            <a class="link" href="https://www.twitter.com/">Twitter</a>
+          <li class="mobile-menu__set-item">
+            <a
+              class="link mobile-menu__set-link"
+              href="https://www.twitter.com/"
+              >Twitter</a
+            >
           </li>
-          <li>
-            <a class="link" href="https://www.facebook.com/">Facebook</a>
+          <li class="mobile-menu__set-item">
+            <a
+              class="link mobile-menu__set-link"
+              href="https://www.facebook.com/"
+              >Facebook</a
+            >
           </li>
-          <li>
-            <a class="link" href="https://www.linkedins.com">Linkedin</a>
+          <li class="mobile-menu__set-item">
+            <a
+              class="link mobile-menu__set-link"
+              href="https://www.linkedins.com"
+              >Linkedin</a
+            >
           </li>
         </ul>
       </div>
-    </div> -->
+    </div>
 
     <main>
       <section
@@ -747,10 +769,10 @@
               <div class="contact-form__subsection">
                 <button type="submit" class="btn contact-form__button">
                   Подписаться
+                  <svg class="contact-form__svg" width="24" height="24">
+                    <use href="./images/icons/symbol-defs.svg#icon-send"></use>
+                  </svg>
                 </button>
-                <svg class="contact-form__svg" width="24" height="24">
-                  <use href="./images/icons/symbol-defs.svg#icon-send"></use>
-                </svg>
               </div>
             </div>
           </form>
@@ -844,5 +866,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
