@@ -1,5 +1,4 @@
 .form {
-  width: 370px;
   width: 100%;
   height: 506px;
 
@@ -112,7 +111,8 @@
 }
 
 .form__checkbox {
-  min-width: 370px;
+  width: 100%;
+  // min-width: 370px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;

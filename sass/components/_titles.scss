@@ -10,6 +10,9 @@
   text-transform: uppercase;
   color: var(--dark-bg-text);
 
+  @media screen and (min-width: 768px) {
+    width: 360px;
+  }
   @media screen and (min-width: 1200px) {
     width: 696px;
     font-size: 44px;
