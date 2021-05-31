@@ -143,6 +143,8 @@
             <a
               class="link mobile-menu__set-link"
               href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
               >Instagram</a
             >
           </li>
@@ -150,6 +152,8 @@
             <a
               class="link mobile-menu__set-link"
               href="https://www.twitter.com/"
+              target="_blank"
+              rel="noopener noreferrer"
               >Twitter</a
             >
           </li>
@@ -157,6 +161,8 @@
             <a
               class="link mobile-menu__set-link"
               href="https://www.facebook.com/"
+              target="_blank"
+              rel="noopener noreferrer"
               >Facebook</a
             >
           </li>
@@ -164,6 +170,8 @@
             <a
               class="link mobile-menu__set-link"
               href="https://www.linkedins.com"
+              target="_blank"
+              rel="noopener noreferrer"
               >Linkedin</a
             >
           </li>
@@ -256,11 +264,23 @@
           <ul class="list card-set">
             <li class="card-set__item card-set--size-other">
               <div class="card-set__work-thumb">
-                <img
-                  src="./images/img.jpg"
-                  alt="Наполнение веб-страницы контентом"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/Photo-WebStudio/desktop/what-we-do/box1_desk.jpg    1x,
+                      ./images/Photo-WebStudio/desktop/what-we-do/box1@2x_desk.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/jpeg"
+                  />
+                  <img
+                    src="./images/Photo-WebStudio/desktop/what-we-do/box1_desk.jpg"
+                    width="370"
+                    height="294"
+                    alt="Наполнение веб-страницы контентом"
+                  />
+                </picture>
+
                 <div class="work-set card-set__work-set">
                   <p class="work-set__text">Десктопные приложения</p>
                 </div>
@@ -268,11 +288,23 @@
             </li>
             <li class="card-set__item card-set--size-other">
               <div class="card-set__work-thumb">
-                <img
-                  src="./images/box2.jpg"
-                  alt="Оформления стилей"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/Photo-WebStudio/desktop/what-we-do/box-2_desk.jpg    1x,
+                      ./images/Photo-WebStudio/desktop/what-we-do/box-2@2x_desk.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/jpeg"
+                  />
+                  <img
+                    src="./images/Photo-WebStudio/desktop/what-we-do/box-2_desk.jpg"
+                    width="370"
+                    height="294"
+                    alt="Оформления стилей"
+                  />
+                </picture>
+
                 <div class="work-set card-set__work-set">
                   <p class="work-set__text">Мобильные приложения</p>
                 </div>
@@ -280,7 +312,22 @@
             </li>
             <li class="card-set__item card-set--size-other">
               <div class="card-set__work-thumb">
-                <img src="./images/box3.jpg" alt="Дизайн" width="370" />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/Photo-WebStudio/desktop/what-we-do/box-3_desk.jpg    1x,
+                      ./images/Photo-WebStudio/desktop/what-we-do/box-3@2x_desk.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/jpeg"
+                  />
+                  <img
+                    src="./images/Photo-WebStudio/desktop/what-we-do/box-3_desk.jpg"
+                    width="370"
+                    height="294"
+                    alt="Дизайн"
+                  />
+                </picture>
 
                 <div class="work-set card-set__work-set">
                   <p class="work-set__text">Дизайнерские решения</p>
@@ -298,11 +345,39 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="list card-set">
             <li class="card-set__item card-set--size team-wrapper">
-              <img
-                src="./images/img1.jpg"
-                alt="Дизайнер продукта"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/Photo-WebStudio/desktop/team/ourteam-1_desk.jpg    1x,
+                    ./images/Photo-WebStudio/desktop/team/ourteam-1@2x_desk.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/Photo-WebStudio/tablet/team/ourteam-1_tablet.jpg    1x,
+                    ./images/Photo-WebStudio/tablet/team/ourteam-1@2x_tablet.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/Photo-WebStudio/mobile/team/outeam-1_mobile.jpg     1x,
+                    ./images/Photo-WebStudio/mobile/team/ourteam-1@2x_mobile.jpg 2x
+                  "
+                  media="(max-width: 767.98px)"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/Photo-WebStudio/mobile/team/outeam-1_mobile.jpg"
+                  width="450"
+                  height="460"
+                  alt="Дизайнер продукта"
+                />
+              </picture>
+
               <div class="block-name card-set__block-name">
                 <h3 class="block-name__title">Игорь Демьяненко</h3>
                 <p class="block-name__text" lang="en">Product Designer</p>
@@ -367,11 +442,39 @@
               </ul>
             </li>
             <li class="card-set__item card-set--size team-wrapper">
-              <img
-                src="./images/img2.jpg"
-                alt="Внешний разработчик"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/Photo-WebStudio/desktop/team/ourteam-2_desk.jpg    1x,
+                    ./images/Photo-WebStudio/desktop/team/ourteam-2@2x_desk.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/Photo-WebStudio/tablet/team/ourteam-2_tablet.jpg    1x,
+                    ./images/Photo-WebStudio/tablet/team/ourteam-2@2x_tablet.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/Photo-WebStudio/mobile/team/ourteam-2_mobile.jpg    1x,
+                    ./images/Photo-WebStudio/mobile/team/ourteam-2@2x_mobile.jpg 2x
+                  "
+                  media="(max-width: 767.98px)"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/Photo-WebStudio/mobile/team/ourteam-2_mobile.jpg"
+                  width="450"
+                  height="460"
+                  alt="Внешний разработчик"
+                />
+              </picture>
+
               <div class="block-name card-set__block-name">
                 <h3 class="block-name__title">Ольга Репина</h3>
                 <p class="block-name__text" lang="en">Frontend Developer</p>
@@ -436,7 +539,39 @@
               </ul>
             </li>
             <li class="card-set__item card-set--size team-wrapper">
-              <img src="./images/img3.jpg" alt="Маркетолог" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/Photo-WebStudio/desktop/team/ourteam-3_desk.jpg    1x,
+                    ./images/Photo-WebStudio/desktop/team/ourteam-3@2x_desk.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/Photo-WebStudio/tablet/team/ourteam-3_tablet.jpg    1x,
+                    ./images/Photo-WebStudio/tablet/team/ourteam-3@2x_tablet.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/Photo-WebStudio/mobile/team/ourteam-3_mobile.jpg    1x,
+                    ./images/Photo-WebStudio/mobile/team/ourteam-3@2x_mobile.jpg 2x
+                  "
+                  media="(max-width: 767.98px)"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/Photo-WebStudio/mobile/team/ourteam-3_mobile.jpg"
+                  width="450"
+                  height="460"
+                  alt="Маркетолог"
+                />
+              </picture>
+
               <div class="block-name card-set__block-name">
                 <h3 class="block-name__title">Николай Тарасов</h3>
                 <p class="block-name__text" lang="en">Marketing</p>
@@ -501,7 +636,39 @@
               </ul>
             </li>
             <li class="card-set__item card-set--size team-wrapper">
-              <img src="./images/img4.jpg" alt="Дизайнер" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/Photo-WebStudio/desktop/team/ourteam-4_desk.jpg    1x,
+                    ./images/Photo-WebStudio/desktop/team/ourteam-4@2x_desk.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/Photo-WebStudio/tablet/team/ourteam-4_tablet.jpg    1x,
+                    ./images/Photo-WebStudio/tablet/team/ourteam-4@2x_tablet.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/Photo-WebStudio/mobile/team/ourteam-4_mobile.jpg    1x,
+                    ./images/Photo-WebStudio/mobile/team/ourteam-4@2x_mobile.jpg 2x
+                  "
+                  media="(max-width: 767.98px)"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/Photo-WebStudio/mobile/team/ourteam-4_mobile.jpg"
+                  width="450"
+                  height="460"
+                  alt="Дизайнер"
+                />
+              </picture>
+
               <div class="block-name card-set__block-name">
                 <h3 class="block-name__title">Михаил Ермаков</h3>
                 <p class="block-name__text" lang="en">UI Designer</p>

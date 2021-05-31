@@ -46,7 +46,11 @@
               class="link contacts-header__link"
               href="mailto:info@devstudio.com"
             >
-              <svg class="contacts-header__icon" width="16" height="12">
+              <svg
+                class="contacts-header__icon icon-envelope"
+                width="16"
+                height="12"
+              >
                 <use href="./images/icons/symbol-defs.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
@@ -62,7 +66,11 @@
               "
               href="tel:+380961111111"
             >
-              <svg class="contacts-header__icon" width="10" height="16">
+              <svg
+                class="contacts-header__icon icon-smartphone"
+                width="10"
+                height="16"
+              >
                 <use
                   href="./images/icons/symbol-defs.svg#icon-smartphone"
                 ></use>
@@ -71,8 +79,105 @@
             >
           </li>
         </ul>
+        <button type="button" class="mobile-menu__btn" data-menu-button>
+          <svg class="menu-btn__icon" width="40" height="40">
+            <use
+              class="menu-btn__icon-close"
+              href="./images/icons/symbol-defs.svg#icon-close"
+            ></use>
+            <use
+              class="menu-btn__icon-menu"
+              href="./images/icons/symbol-defs.svg#icon-menu"
+            ></use>
+          </svg>
+        </button>
       </div>
     </header>
+
+    <div class="mobile-menu" data-menu>
+      <div class="container">
+        <ul class="mobile-menu__list list">
+          <li class="mobile-menu__item">
+            <a
+              class="link mobile-menu__link sublist mobile-menu__sublist"
+              href="./index.html"
+              >Студия</a
+            >
+          </li>
+          <li class="mobile-menu__item">
+            <a class="link mobile-menu__link" href="./portfolio.html"
+              >Портфолио</a
+            >
+          </li>
+          <li class="mobile-menu__item">
+            <a class="link mobile-menu__link" href="contacts">Контакты</a>
+          </li>
+        </ul>
+
+        <ul class="list mobile-menu__contacts">
+          <li class="mobile-menu__contacts-item">
+            <a
+              class="
+                link
+                mobile-menu__contacts-link
+                sublink
+                mobile-menu__sublink
+              "
+              href="tel:+380961111111"
+            >
+              +38 096 111 11 11</a
+            >
+          </li>
+          <li class="mobile-menu__contacts-item">
+            <a
+              class="link mobile-menu__contacts-link"
+              href="mailto:info@devstudio.com"
+            >
+              info@devstudio.com
+            </a>
+          </li>
+        </ul>
+
+        <ul class="list mobile-menu__set">
+          <li class="mobile-menu__set-item">
+            <a
+              class="link mobile-menu__set-link"
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Instagram</a
+            >
+          </li>
+          <li class="mobile-menu__set-item">
+            <a
+              class="link mobile-menu__set-link"
+              href="https://www.twitter.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Twitter</a
+            >
+          </li>
+          <li class="mobile-menu__set-item">
+            <a
+              class="link mobile-menu__set-link"
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Facebook</a
+            >
+          </li>
+          <li class="mobile-menu__set-item">
+            <a
+              class="link mobile-menu__set-link"
+              href="https://www.linkedins.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Linkedin</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
 
     <main>
       <section class="block portfolio-section block__portfolio-section">
@@ -109,7 +214,38 @@
             <li class="works-set__item">
               <a href="" class="link works-set__link">
                 <div class="works-set__card-img">
-                  <img src="./images/img21.jpg" alt="Веб-сайт" width="370" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/Photo-WebStudio/desktop/portfolio/portfolio1_desk.jpg    1x,
+                        ./images/Photo-WebStudio/desktop/portfolio/portfolio1@2x_desk.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/Photo-WebStudio/tablet/portfolio/portfolio1_tablet.jpg    1x,
+                        ./images/Photo-WebStudio/tablet/portfolio/portfolio1@2x_tablet.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/Photo-WebStudio/mobile/portfolio/portfolio1_mobile.jpg    1x,
+                        ./images/Photo-WebStudio/mobile/portfolio/portfolio1@2x_mobile.jpg 2x
+                      "
+                      media="(max-width: 767.98px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/Photo-WebStudio/mobile/portfolio/portfolio1_mobile.jpg"
+                      width="450"
+                      height="294"
+                      alt="Веб-сайт"
+                    />
+                  </picture>
 
                   <div class="works-set__card-description">
                     <p class="works-set__card-description-text">
@@ -131,11 +267,39 @@
             <li class="works-set__item">
               <a href="" class="list link works-set__link">
                 <div class="works-set__card-img">
-                  <img
-                    src="./images/img22.jpg"
-                    alt="Дизайн постера"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/Photo-WebStudio/desktop/portfolio/portfolio2_desk.jpg    1x,
+                        ./images/Photo-WebStudio/desktop/portfolio/portfolio2@2x_desk.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/Photo-WebStudio/tablet/portfolio/portfolio2_tablet.jpg    1x,
+                        ./images/Photo-WebStudio/tablet/portfolio/portfolio2@2x_tablet.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/Photo-WebStudio/mobile/portfolio/portfolio2_mobile.jpg    1x,
+                        ./images/Photo-WebStudio/mobile/portfolio/portfolio2@2x_mobile.jpg 2x
+                      "
+                      media="(max-width: 767.98px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/Photo-WebStudio/mobile/portfolio/portfolio2_mobile.jpg"
+                      width="450"
+                      height="294"
+                      alt="Дизайн постера"
+                    />
+                  </picture>
+
                   <div class="works-set__card-description">
                     <p class="works-set__card-description-text">
                       Технокряк это современная площадка распространения
@@ -157,11 +321,39 @@
             <li class="works-set__item">
               <a href="" class="link works-set__link">
                 <div class="works-set__card-img">
-                  <img
-                    src="./images/img23.jpg"
-                    alt="Приложение ресторана"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/Photo-WebStudio/desktop/portfolio/portfolio3_desk.jpg    1x,
+                        ./images/Photo-WebStudio/desktop/portfolio/portfolio3@2x_desk.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/Photo-WebStudio/tablet/portfolio/portfolio3_tablet.jpg    1x,
+                        ./images/Photo-WebStudio/tablet/portfolio/portfolio3@2x_tablet.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/Photo-WebStudio/mobile/portfolio/portfolio3_mobile.jpg    1x,
+                        ./images/Photo-WebStudio/mobile/portfolio/portfolio3@2x_mobile.jpg 2x
+                      "
+                      media="(max-width: 767.98px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/Photo-WebStudio/mobile/portfolio/portfolio3_mobile.jpg"
+                      width="450"
+                      height="294"
+                      alt="Приложение ресторана"
+                    />
+                  </picture>
+
                   <div class="works-set__card-description">
                     <p class="works-set__card-description-text">
                       Технокряк это современная площадка распространения
@@ -181,11 +373,39 @@
             <li class="works-set__item">
               <a href="" class="link works-set__link">
                 <div class="works-set__card-img">
-                  <img
-                    src="./images/img24.jpg"
-                    alt="Маркетинг проекта наушники"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/Photo-WebStudio/desktop/portfolio/portfolio4_desk.jpg    1x,
+                        ./images/Photo-WebStudio/desktop/portfolio/portfolio4@2x_desk.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/Photo-WebStudio/tablet/portfolio/portfolio4_tablet.jpg    1x,
+                        ./images/Photo-WebStudio/tablet/portfolio/portfolio4@2x_tablet.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/Photo-WebStudio/mobile/portfolio/portfolio4_mobile.jpg    1x,
+                        ./images/Photo-WebStudio/mobile/portfolio/portfolio4@2x_mobile.jpg 2x
+                      "
+                      media="(max-width: 767.98px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/Photo-WebStudio/mobile/portfolio/portfolio4_mobile.jpg"
+                      width="450"
+                      height="294"
+                      alt="Маркетинг проекта наушники"
+                    />
+                  </picture>
+
                   <div class="works-set__card-description">
                     <p class="works-set__card-description-text">
                       Технокряк это современная площадка распространения
@@ -205,11 +425,39 @@
             <li class="works-set__item">
               <a href="" class="link works-set__link">
                 <div class="works-set__card-img">
-                  <img
-                    src="./images/img25jpg.jpg"
-                    alt="Приложение проекта коробки"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/Photo-WebStudio/desktop/portfolio/portfolio5_desk.jpg    1x,
+                        ./images/Photo-WebStudio/desktop/portfolio/portfolio5@2x_desk.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/Photo-WebStudio/tablet/portfolio/portfolio5_tablet.jpg    1x,
+                        ./images/Photo-WebStudio/tablet/portfolio/portfolio5@2x_tablet.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/Photo-WebStudio/mobile/portfolio/portfolio5_mobile.jpg    1x,
+                        ./images/Photo-WebStudio/mobile/portfolio/portfolio5@2x_mobile.jpg 2x
+                      "
+                      media="(max-width: 767.98px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/Photo-WebStudio/mobile/portfolio/portfolio5_mobile.jpg"
+                      width="450"
+                      height="294"
+                      alt="Приложение проекта коробки"
+                    />
+                  </picture>
+
                   <div class="works-set__card-description">
                     <p class="works-set__card-description-text">
                       Технокряк это современная площадка распространения
@@ -229,11 +477,39 @@
             <li class="works-set__item">
               <a href="" class="link works-set__link">
                 <div class="works-set__card-img">
-                  <img
-                    src="./images/img26.jpg"
-                    alt="Веб-сайт вдохновения "
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/Photo-WebStudio/desktop/portfolio/portfolio6_desk.jpg    1x,
+                        ./images/Photo-WebStudio/desktop/portfolio/portfolio6@2x_desk.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/Photo-WebStudio/tablet/portfolio/portfolio6_tablet.jpg    1x,
+                        ./images/Photo-WebStudio/tablet/portfolio/portfolio6@2x_tablet.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/Photo-WebStudio/mobile/portfolio/portfolio6_mobile.jpg    1x,
+                        ./images/Photo-WebStudio/mobile/portfolio/portfolio6@2x_mobile.jpg 2x
+                      "
+                      media="(max-width: 767.98px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/Photo-WebStudio/mobile/portfolio/portfolio6_mobile.jpg"
+                      width="450"
+                      height="294"
+                      alt="Веб-сайт вдохновения "
+                    />
+                  </picture>
+
                   <div class="works-set__card-description">
                     <p class="works-set__card-description-text">
                       Технокряк это современная площадка распространения
@@ -255,11 +531,39 @@
             <li class="works-set__item">
               <a href="" class="link works-set__link">
                 <div class="works-set__card-img">
-                  <img
-                    src="./images/img27.jpg"
-                    alt="Дизайн издания"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/Photo-WebStudio/desktop/portfolio/portfolio7_desk.jpg    1x,
+                        ./images/Photo-WebStudio/desktop/portfolio/portfolio7@2x_desk.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/Photo-WebStudio/tablet/portfolio/portfolio7_tablet.jpg    1x,
+                        ./images/Photo-WebStudio/tablet/portfolio/portfolio7@2x_tablet.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/Photo-WebStudio/mobile/portfolio/portfolio7_mobile.jpg    1x,
+                        ./images/Photo-WebStudio/mobile/portfolio/portfolio7@2x_mobile.jpg 2x
+                      "
+                      media="(max-width: 767.98px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/Photo-WebStudio/mobile/portfolio/portfolio7_mobile.jpg"
+                      width="450"
+                      height="294"
+                      alt="Дизайн издания"
+                    />
+                  </picture>
+
                   <div class="works-set__card-description">
                     <p class="works-set__card-description-text">
                       Технокряк это современная площадка распространения
@@ -281,11 +585,39 @@
             <li class="works-set__item">
               <a href="" class="link works-set__link">
                 <div class="works-set__card-img">
-                  <img
-                    src="./images/img28.jpg"
-                    alt="Маркетинг проекта лаб"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/Photo-WebStudio/desktop/portfolio/portfolio8_desk.jpg    1x,
+                        ./images/Photo-WebStudio/desktop/portfolio/portfolio8@2x_desk.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/Photo-WebStudio/tablet/portfolio/portfolio8_tablet.jpg    1x,
+                        ./images/Photo-WebStudio/tablet/portfolio/portfolio8@2x_tablet.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/Photo-WebStudio/mobile/portfolio/portfolio8_mobile.jpg    1x,
+                        ./images/Photo-WebStudio/mobile/portfolio/portfolio8@2x_mobile.jpg 2x
+                      "
+                      media="(max-width: 767.98px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/Photo-WebStudio/mobile/portfolio/portfolio8_mobile.jpg"
+                      width="450"
+                      height="294"
+                      alt="Маркетинг проекта лаб"
+                    />
+                  </picture>
+
                   <div class="works-set__card-description">
                     <p class="works-set__card-description-text">
                       Технокряк это современная площадка распространения
@@ -305,11 +637,39 @@
             <li class="works-set__item">
               <a href="" class="link works-set__link">
                 <div class="works-set__card-img">
-                  <img
-                    src="./images/img29.jpg"
-                    alt="Приложение растущего бизнеса"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/Photo-WebStudio/desktop/portfolio/portfolio9_desk.jpg    1x,
+                        ./images/Photo-WebStudio/desktop/portfolio/portfolio9@2x_desk.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/Photo-WebStudio/tablet/portfolio/portfolio9_tablet.jpg    1x,
+                        ./images/Photo-WebStudio/tablet/portfolio/portfolio9@2x_tablet.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/Photo-WebStudio/mobile/portfolio/portfolio9_mobile.jpg    1x,
+                        ./images/Photo-WebStudio/mobile/portfolio/portfolio9@2x_mobile.jpg 2x
+                      "
+                      media="(max-width: 767.98px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/Photo-WebStudio/mobile/portfolio/portfolio9_mobile.jpg"
+                      width="450"
+                      height="294"
+                      alt="Приложение растущего бизнеса"
+                    />
+                  </picture>
+
                   <div class="works-set__card-description">
                     <p class="works-set__card-description-text">
                       Технокряк это современная площадка распространения
@@ -449,15 +809,16 @@
               <div class="contact-form__subsection">
                 <button type="submit" class="btn contact-form__button">
                   Подписаться
+                  <svg class="contact-form__svg" width="24" height="24">
+                    <use href="./images/icons/symbol-defs.svg#icon-send"></use>
+                  </svg>
                 </button>
-                <svg class="contact-form__svg" width="24" height="24">
-                  <use href="./images/icons/symbol-defs.svg#icon-send"></use>
-                </svg>
               </div>
             </div>
           </form>
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
